@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <style>
+        img{
+            width: 100%;
+            height: 100px;
+            object-fit: contain;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="products">
+        <!-- <a onclick="show('id-1')" class="text" href="#">Mirror</a> |
+        <a onclick="show('id-2')" class="text" href="#">Trolley</a> |
+        <a onclick="show('id-3')" class="text" href="#">Mirror 2</a> |
+        <a onclick="show('id-4')" class="text" href="#">Trolley 3</a> -->
+        <div class="item">
+            <img src="img/aamir-suhail-AqG1X0AObm0-unsplash.jpg" alt="" onclick="show('id-1')">
+        </div>
+        <div class="item">
+            <img src="img/atharva-whaval-fhv8SNVP7XE-unsplash.jpg" alt="" onclick="show('id-2')">
+        </div>
+        <div class="item">
+            <img src="img/daren-inshape-Twinih9fIog-unsplash.jpg" alt="" onclick="show('id-3')">
+        </div>
+        <div class="item">
+            <img src="img//habib-dadkhah-6HDoRL0Y_-w-unsplash.jpg" alt="" onclick="show('id-4')">
+        </div>
+
+        <p>
+        <div id="id-1" style="display:none;border:1px solid red;">
+            im mirror
+            <img src="img/aamir-suhail-AqG1X0AObm0-unsplash.jpg" alt="">
+        </div>
+
+        <div id="id-2" style="display:none;border:1px solid blue;">I'm Trolley
+            <img src="img/atharva-whaval-fhv8SNVP7XE-unsplash.jpg" alt="">
+        </div>
+
+        <div id="id-3" style="display:none;border:1px solid red;">
+            im mirror 333
+            <img src="img/daren-inshape-Twinih9fIog-unsplash.jpg" alt="">
+        </div>
+
+        <div id="id-4" style="display:none;border:1px solid blue;">I'm Trolley 444
+            <img src="img//habib-dadkhah-6HDoRL0Y_-w-unsplash.jpg" alt=""></div>
+        </p>
+    </div>
+
+    <script>
+        function hide() {
+            var all = $('#products div');
+            $(all).css("display", "none");
+        }
+        function show(id) {
+            hide();
+            var element = document.getElementById(id);
+            element.style.display = "";
+        }
+    </script>
+</body>
+
+</html>
